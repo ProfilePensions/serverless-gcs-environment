@@ -1,7 +1,6 @@
 'use strict'
 
 const Storage = require('./lib/storage')
-
 const collectFunctionEnvVariables = require('./lib/collectFunctionEnvVariables.js')
 const collectProviderEnvVariables = require('./lib/collectProviderEnvVariables')
 
@@ -20,7 +19,7 @@ class ServerlessGcsEnvironmentPlugin {
   }
 
   async gcsSecretsHandler () {
-    this.serverless.cli.log('Creating .env file...')
+    this.serverless.cli.log('Replacing GCS environment variables')
 
     // collect global environment variables
     this.environmentVariables.provider = collectProviderEnvVariables(this.serverless)
