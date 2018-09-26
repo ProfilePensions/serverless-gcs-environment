@@ -1,0 +1,43 @@
+{
+  "name": "serverless-gcs-environment",
+  "version": "0.0.1",
+  "description": "Serverless plugin to fetch encrypted secrets from GCS and set them to envrionment variables",
+  "main": "src/index.js",
+  "author": "Alex Dransfield <alex.dransfield@profilepensions.co.uk>",
+  "license": "MIT",
+  "scripts": {
+    "test": "$(npm bin)/jest test",
+    "test:debug": "node --inspect node_modules/.bin/jest --runInBand test",
+    "test:cover": "$(npm bin)/jest test --coverage",
+    "lint": "$(npm bin)/standard | $(npm bin)/snazzy",
+    "coveralls": "cat ./coverage/lcov.info | $(npm bin)/coveralls"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ProfilePensions/serverless-gcs-environment.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ProfilePensions/serverless-gcs-environment/issues"
+  },
+  "homepage": "https://github.com/ProfilePensions/serverless-gcs-environment",
+  "dependencies": {
+    "@google-cloud/storage": "^2.0.3"
+  },
+  "devDependencies": {
+    "coveralls": "^2.13.3",
+    "jest": "^19.0.2",
+    "sinon": "^6.3.4",
+    "snazzy": "^6.0.0",
+    "standard": "^9.0.2"
+  },
+  "standard": {
+    "envs": [
+      "node",
+      "jest"
+    ],
+    "ignore": [
+      "node_modules/",
+      "coverage"
+    ]
+  }
+}
