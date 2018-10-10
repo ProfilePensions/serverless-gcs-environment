@@ -49,7 +49,7 @@ describe('gcs environment variales', () => {
     sandbox.restore()
   })
 
-  describe.only('gcs env', () => {
+  describe('gcs env', () => {
     it('should get gcs env', async () => {
       sandbox.stub(pluginInstance.storage, 'downloadAsBase64')
       pluginInstance.storage.downloadAsBase64

@@ -9,7 +9,7 @@ class ServerlessGcsEnvironmentPlugin {
     this.serverless = serverless
     this.options = options
     this.gcsRegex = /(gcs::)(.*)/
-    this.storage = new Storage()
+    this.storage = new Storage(serverless.service.provider.credentials)
 
     this.hooks = {
       'before:package:finalize': this.gcsSecretsHandler.bind(this)
