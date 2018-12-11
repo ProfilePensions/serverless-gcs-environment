@@ -1,5 +1,5 @@
 {
-  "name": "serverless-gcs-environment",
+  "name": "@profilepensions/serverless-gcs-environment",
   "version": "1.0.0",
   "description": "Serverless plugin to fetch encrypted secrets from GCS and set them to envrionment variables",
   "main": "src/index.js",
