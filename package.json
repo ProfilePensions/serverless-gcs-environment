@@ -1,6 +1,6 @@
 {
   "name": "serverless-gcs-environment",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Serverless plugin to fetch encrypted secrets from GCS and set them to envrionment variables",
   "main": "src/index.js",
   "author": "Alex Dransfield <alex.dransfield@profilepensions.co.uk>",
